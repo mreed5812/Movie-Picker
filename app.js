@@ -34,6 +34,10 @@ function getSeed() {
 	return Math.floor(Math.random()*(SLOTS_PER_REEL));
 }
 
+function getMovie(){
+	//get movie through api
+}
+
 function spin(timer) {
 	//var txt = 'seeds: ';
 	for(var i = 1; i < 6; i ++) {
@@ -42,9 +46,10 @@ function spin(timer) {
 		checking that the old seed from the previous iteration is not the same as the current iteration;
 		if this happens then the reel will not spin at all
 		*/
-		var oldClass = $('#ring'+i).attr('class');
+		let oldClass = $('#ring'+i).attr('class');
 		if(oldClass.length > 4) {
 			oldSeed = parseInt(oldClass.slice(10));
+			console.log(oldClass.length);
 			console.log(oldSeed);
 		}
 		var seed = getSeed();
@@ -69,7 +74,7 @@ $(document).ready(function() {
  	$('.go').on('click',function(){
  		var timer = 2;
  		spin(timer);
- 	})
+ 	});
 
  	// hook xray checkbox
  	$('#xray').on('click',function(){

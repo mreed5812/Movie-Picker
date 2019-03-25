@@ -1,0 +1,19 @@
+{
+  "name": "movie-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mreed5812/Movie-Picker.git"
+  },
+  "author": "Michael Reed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mreed5812/Movie-Picker/issues"
+  },
+  "homepage": "https://github.com/mreed5812/Movie-Picker#readme"
+}
